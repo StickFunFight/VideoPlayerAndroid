@@ -16,15 +16,12 @@
         tools:text="@string/hello_blank_fragment"
         />
 
-    <TextView
-        android:id="@+id/TvYoutube"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
     <WebView
         android:id="@+id/mWebView"
         android:layout_width="match_parent"
-        android:layout_height="403dp" />
+        android:layout_height="292dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px" />
 
 </FrameLayout>

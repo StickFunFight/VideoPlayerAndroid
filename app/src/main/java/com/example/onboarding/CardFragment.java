@@ -57,12 +57,8 @@ public class CardFragment extends Fragment {
             WebView mWebView = view.findViewById(R.id.mWebView);
             mWebView.getSettings().setJavaScriptEnabled(true);
             mWebView.getSettings().setPluginState(WebSettings.PluginState.ON);
-            //mWebView.setWebChromeClient(new WebChromeClient());
             mWebView.setWebViewClient(new WebViewClient());
-            mWebView.loadUrl("http://www.youtube.com/embed/" + Youtube[counter] + "?autoplay=1&vq=small");
-
-
-
+            mWebView.loadUrl("http://www.youtube.com/embed/" + Youtube[counter]);
         }catch(Exception e){
             //zodat de app niet crashed
         }
